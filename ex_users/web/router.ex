@@ -6,6 +6,7 @@ defmodule ExUsers.Router do
   end
 
   scope "/api", ExUsers do
-    pipe_through :api
+   pipe_through :api
+   resources "/users", UserController
   end
 end
